@@ -5,4 +5,5 @@
 echo 
 echo "Listando meus diretorios e arquivos"
 ls -l
+df -h
 echo
