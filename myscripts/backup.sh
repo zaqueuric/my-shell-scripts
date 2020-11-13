@@ -8,11 +8,11 @@
 # *******************************************************************************
 
 # Variables
-origin_bkp_files="/data/db/" # Diretorios ou arquivo que se deseja fazer bkp
-destination_bkp="/backup/testebkp/" # Diretorio de destino dos arquivos de backup
+origin_bkp_files="/data/db/" # Folders or files that you need to make backoup
+destination_bkp="/backup/testebkp/" # Folder to destiny your content
 
-dia=$(date +%d-%m-%y) # Data do sistema
-hostname=$(hostname -s) # Nome da maquina
+dia=$(date +%d-%m-%y) # System data
+hostname=$(hostname -s) # Machine name
 
 file="$hostname-$dia.tar.gz"
 
@@ -35,5 +35,5 @@ echo "Sucesso!"
 echo ""
 
 echo "Listando os arquivos do destino"
-ls -lh $destination_bk # -lh para mostrar os arquivos em MB
+ls -lh $destination_bk # Show the archive files capacity in MB
 echo ""
